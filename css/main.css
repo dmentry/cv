@@ -14,3 +14,8 @@ h4 {
   width: 20%;
   border-radius: 50px;
 }
+
+.photo-container {
+  margin: 10px, 0, 10px, 20px;
+  padding: 0 0 0 10px;
+}
