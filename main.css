@@ -1,0 +1,41 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.wrapper {
+  width: 650px;
+  margin: 0 auto 0 20px;
+}
+
+h3 {
+  margin: 15px 10px 0 0;
+}
+
+h3 + p, .experience, h4 {
+  margin: 5px 0 0 10px;
+}
+
+.experience {
+  margin: 0 0 0 -15px;
+}
+
+li {
+  list-style: disc;
+  }
+
+.education_period {
+  margin: 5px 15px 15px 0;
+}
+
+.work_period {
+  margin: 0 15px 15px 10px;
+}
+
+ul {
+  margin: 5px 15px 5px 5px;
+}
+
+.position {
+   margin: 10px 15px 0 30px;
+}
