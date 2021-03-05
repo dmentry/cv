@@ -15,6 +15,10 @@ h4 {
   margin: 5px 0 8px 0;
 }
 
+.centered {
+  text-align: center;
+}
+
 .work_period {
   margin: -20px 0 10px 13px;
 }
