@@ -49,3 +49,13 @@ h4 {
 a {
   color: black;
 }
+
+.application-ref {
+  height: 100px;
+  margin: 0 10px 0 0;
+}
+
+.appl-name {
+  font-size: 80%;
+  margin: 0 0 8px 0;
+}
