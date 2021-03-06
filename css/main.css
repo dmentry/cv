@@ -29,7 +29,7 @@ h4 {
 }
 
 .photo-container {
-  margin: 10px 0 10px 20px;
+  margin: 2% 0 10px 20px;
   padding: 0 0 0 10px;
 }
 
@@ -43,7 +43,9 @@ h4 {
 }
 
 .logo-link {
-  margin: 0 10px 0 0;
+  position: relative;
+  top: 13px;
+  margin: 0 10px 0 10px;
 }
 
 a {
@@ -58,4 +60,12 @@ a {
 .appl-name {
   font-size: 80%;
   margin: 0 0 8px 0;
+}
+
+.top-margin {
+  margin: 15px 0 0 0;
+}
+
+.bold {
+  font-weight: 900;
 }
