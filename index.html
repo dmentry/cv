@@ -16,7 +16,7 @@
   <body>
     <div class="container">
       <h2 class="centered">Дмитрий Архипов</h2>
-      <h3 class="centered">Fullstack&ndash;разработчик (Ruby on Rails)</h3>
+      <h3 class="centered">Backend&ndash;разработчик (Ruby on Rails)</h3>
 
       <div class="row">
         <div class="photo-container one-third column">
@@ -34,22 +34,71 @@
 
       <div>
         <h4>Профессиональные навыки</h4>
+        <h5>Ruby</h5>
         <ul>
-          <li>Ruby
-           четкое понимание принципов ООП, важности code style</li>
-          <li>Ruby on Rails
-          MVC &ndash; основа архитектуры приложений </li>
-           RSpec: по возможности, весь основной код необходимо пеорывать тестами. Работал с гемом FactoryBot. Для интеграционных тестов использовал гем Capybara
-            Action Mailer: отправлял почту с помощью Mailjet API. В development-окружении использовал гем Letter Opener
-            Основы проектирования приложений: перед проектированием необходимо корректно поставить задачу, придумать сущности, написать сценарии и создать CRUD
-            Авторизовал пользователя с помощью гема Devise и разграничивал его доступ, используя гем Pandit
-          <li>Работа с гемами: devise, pundit, carrierwave, fog&ndash;aws, omniauth, mailjet, capistrano</li>
-          <li>Уверенное использование Git, Github, Heroku</li>
-          <li>Базовые знания языка запросов SQL</li>
-          <li>Уверенное использование HTML и CSS</li>
-          <li>Уверенное использование Bootstrap 4.5</li>
-          <li>Работа с Linux: установка/настройка приложений (rvm/rbenv, nginx, postfix, pgsql, sql), работа в терминале</li>
-          <li>Английский язык: upper intermediate</li>
+          <li><span class="bold">ООП, классы:</span> понимание принципов ООП, важности code style, принципов инкапсуляции, наследования, полиморфизма, абстракции</li>
+          <li><span class="bold">Установка Ruby:</span> использование rvm или rbenv</li>
+        </ul>
+        <h5>Ruby on Rails</h5>
+        <ul>
+          <li><span class="bold">Основы проектирования приложений:</span> изначально необходимо корректно поставить задачу, продумать сущности, написать сценарии и создать CRUD</li>
+          <li><span class="bold">MVC:</span> основа архитектуры приложений</li>
+          <li><span class="bold">Active Record:</span> создание ассоциаций между моделями, построение запросов к базе данных с помощью интерфейса запросов, создание миграций, используя генератор, написание валидаций и коллбэков</li>
+          <li><span class="bold">Action Mailer:</span> отправка почты с помощью Mailjet. В development&ndash;окружении использование гема Letter Opener</li>
+          <li><span class="bold">Аутентификация пользователя</span> с помощью Devise и его авторизация, используя Pandit. Для доступа с учетными данными соц. сетей использование гема OmniAuth</li>
+          <li><span class="bold">Credentials:</span> хранение паролей, ключей и иной конфиденциальной информации</li>
+          <li><span class="bold">i18n:</span> локализация приложения</li>
+          <li><span class="bold">Carrierwave, Rmagick, Fog::Aws :</span> использование для загрузки, обработки и хранения изображений (и не только) в проекте</li>
+          <li><span class="bold">Webpacker:</span> для интеграции Rails со сборщиком ассетов webpack</li>
+          <li><span class="bold">Pry</span> для дебага</li>
+          <li><span class="bold">recaptcha:</span> защита от спама с помощью технологии Google reCAPTCHA</li>
+        </ul>
+          <h5>Тестирование</h5>
+          <ul>
+            <li><span class="bold">RSpec:</span> по возможности, весь основной код необходимо покрывать тестами. Работал с гемом FactoryBot. Для интеграционных тестов использовал Capybara</li>
+          </ul>
+          <h5>БД</h5>
+          <ul>
+            <li>Есть опыт работы с SQLite и PostgreSQL</li>
+            <li>Работа с основными командами БД: SELECT, UPDATE, INSERT, DELETE, WHERE, GROUP BY, ORDER BY, JOIN</li>
+          </ul>
+          <h5>Deploy</h5>
+          <ul>
+            <li><span class="bold">VPS</span></li>
+              <ul>
+                <li>Установка веб-серверов Nginx и Phusion Passenger c БД PostgreSQL</li>
+                <li>Деплой Rails&ndash;приложения с помощью Capistrano</li>
+              </ul>
+            <li><span class="bold">Heroku</span></li>
+              <ul>
+                <li>Развертывание приложения, настройка переменных окружения, работа с логами</li>
+              </ul>
+          </ul>
+          <h5>Технологии</h5>
+          <ul>
+            <li><span class="bold">Git, Github:</span> базовое использование</li>
+            <li><span class="bold">Linux:</span> Ubuntu</li>
+            <li>RubyMine, Sublime</li>
+            <li><span class="bold">AWS S3:</span> хранения файлов</li>
+          </ul>
+          <h5>XML, JSON</h5>
+          <ul>
+            <li>Чтение и запись с помощью библиотек</li>
+            <li>Парсинг данных с сайтов и их обработка</li>
+          </ul>
+          <h5>XLSX, DOC</h5>
+          <ul>
+            <li>Парсинг данных из файлов, их обработка и запись с помощью гемов: Roo, REXML, WriteXLSX, Omnidocx, Sablon</li>
+          </ul>
+          <h5>Frontend</h5>
+          <ul>
+            <li><span class="bold">HTML, CSS, Bootstrap 4.5:</span> уверенное использование (<a href="https://myphotolanding.herokuapp.com/" title="Фотокурс">пример моего лендинга</a>)</li>
+            <li><span class="bold">jQuery:</span> базовое использование</li>
+          </ul>
+          <h5>Иностранный язык</h5>
+          <ul>
+            <li><span class="bold">Английский:</span> upper intermediate</li>
+          </ul>
         </ul>
       </div>
 
@@ -112,7 +161,7 @@
       <div>
         <h4>Опыт работы</h4>
         <ul>
-          <li>ООО «Мазда Мотор Рус»</li>
+          <li class="company_name">ООО «Мазда Мотор Рус»</li>
           <ul>
             <li>Координатор по качеству продукции</li>
           </ul>
@@ -122,7 +171,7 @@
           </ul>
           <p class="work_period_sublist">03.2008 &ndash; 05.2015</p>
 
-          <li>ООО СП «Бизнес Кар»</li>
+          <li class="company_name">ООО СП «Бизнес Кар»</li>
           <ul>
             <li>Инженер&ndash;технолог</li>
           </ul>
@@ -149,6 +198,12 @@
           <li>Место проживания: г. Балашиха, Московская область</li>
           <li>Являюсь достаточно открытым человеком, который всегда готов пообщаться и выслушать рекомендации более опытных коллег. Целеустремлен, обязателен, пунктуален. Хобби &ndash; макрофотография. Решил кардинально сменить сферу деятельности из-за профессионального выгорания</li>
         </ul>
+      </div>
+
+      <div>
+          <p class="bottom_contacts centered"><a href="mailto:work@dack9.ru" class="logo-link"><img src="images/mail_logo.png" alt="email" class="logo"></a>
+          <a href="https://github.com/dmentry" class="logo-link"><img src="images/gh_logo.png" alt="gh" class="logo"></a>
+          <a href="https://t.me/dack99" class="logo-link"><img src="images/teleg_logo.png" alt="gh" class="logo"></a></p>
       </div>
     </div>
   </body>

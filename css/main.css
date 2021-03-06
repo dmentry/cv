@@ -73,3 +73,12 @@ a {
 .bold {
   font-weight: 900;
 }
+
+.company_name {
+  font-size: 150%;
+  font-weight: 500;
+}
+
+.bottom_contacts {
+  margin: -20px 0 20px 0;
+}
