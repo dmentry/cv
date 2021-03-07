@@ -1,83 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: #F5F5F5;
+  margin-top: 20px;
+  background-color: whitesmoke;
 }
 
-.container {
-  background: white;
-  padding: 0 10px 0 10px;
+.bg-white {
+  background-color: white;
 }
 
-h5 {
-  margin: 0 0 5px 0;
+.bg-gray {
+  background-color: #e0e0e0;
 }
 
-h4 {
-  margin: 5px 0 8px 0;
+.int-info {
+  padding-left: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.list-skills li.list-list {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  font-size: 14px;
+}
+
+.list-skills li.list-list:not(:first-of-type) {
+  border-top: 1px solid #e0e0e0;
+}
+
+.card {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  border-radius: 0px !important;
+}
+
+.bottom-line {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.bottom-line-applications {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.second_list {
+  margin: 0 0 0 10px;
+}
+
+.appl-screenshot {
+  width: 265px;
+  height: auto;
+}
+
+.period {
+  margin-left: 10px;
+}
+
+.top-more-space {
+  margin-top: 40px;
+}
+
+.top-less-space {
+  margin-top: -40px;
 }
 
 .centered {
   text-align: center;
 }
 
-.work_period {
-  margin: -20px 0 10px 13px;
+.bottom-space {
+  margin: 0 0 10px 0
 }
 
-.photo {
-  width: 60%;
-  /* border-radius: 50px; */
+.col-info {
+  background-color: darkgray;
+  margin-bottom: 20px;
 }
 
-.photo-container {
-  margin: 2% 0 10px 20px;
-  padding: 0 0 0 10px;
+img {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.contact-info {
+  min-height: 75px;
+}
+
+.text-about-me {
+  padding: 0 0 0 7px;
+  margin: 0 0 0 0;
+  color: #212529;
+  font-size: 14px;
+}
+
+.text-about-me-2 {
+  padding: 0 0 0 7px;
+  margin: 0 0 0 0;
+  font-size: 170%;
 }
 
 .logo {
-  width:35px;
-  height:35px;
-}
-
-.private-data {
-  margin: 20px 0 15px 0;
+  width: 9%;
+  opacity: 0.8;
 }
 
 .logo-link {
-  position: relative;
-  top: 13px;
-  margin: 0 10px 0 10px;
+  padding: 0 0 0 0;
+  margin: 0 0 0 18px;
 }
 
-a {
-  color: black;
+.skills-title {
+  color: #37474F;
+  font-weight: 500;
+  font-size: 17px !important;
 }
 
-.application-ref {
-  height: 100px;
-  margin: 0 10px 0 0;
+@media (max-width: 990px) {
+  .text-about-me-2 {
+  font-size: 120%;
+  }
+
+  .logo-link {
+    padding: 0 0 0 0;
+    margin: 0 0 0 20px;
+  }
 }
 
-.appl-name {
-  font-size: 80%;
-  margin: 0 0 8px 0;
+@media (max-width: 960px) {
+  .logo {
+    width: 8%;
+  }
 }
 
-.top-margin {
-  margin: 15px 0 0 0;
+@media (max-width: 800px) {
+  .text-about-me-2 {
+  font-size: 120%;
+  }
 }
 
-.top-margin2 {
-  margin: 25px 0 0 0;
+@media (max-width: 767px) {
+  .text-about-me {
+  font-size: 130%;
+  }
 }
 
-.bold {
-  font-weight: 900;
-}
+@media (max-width: 540px) {
+  .logo-link {
+    padding: 0 0 0 0;
+    margin: 0 0 0 20px;
+  }
 
-.bottom_contacts {
-  margin: -20px 0 20px 0;
-}
-
-.margin_top {
-
+  .logo {
+    width: 6%;
+  }
 }

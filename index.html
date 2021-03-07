@@ -1,203 +1,239 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дмитрий Архипов, Ruby on Rails</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="bg-whitesmoke">
+  <div class="container shadow p-2 mb-3 bg-muted rounded bg-gray">
 
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <title>Дмитрий Архипов, Ruby on Rails</title>
-  </head>
-  <body>
-    <div class="container">
-      <h2 class="centered">Дмитрий Архипов</h2>
-      <h3 class="centered">Backend&ndash;разработчик (Ruby on Rails)</h3>
-
+    <div class="col offset-xl-1 col-xl-10">
       <div class="row">
-        <div class="photo-container one-third column">
-          <img src="images/503d.jpg" alt="Фото соискателя" class="u-max-full-width avatar photo">
-        </div>
-        <div class="two-thirds column">
-          <p class="top-margin"><span class="bold">Контакты:</span> <a href="mailto:work@dack9.ru" class="logo-link"><img src="images/mail_logo.png" alt="email" class="logo"></a>
-          <a href="https://github.com/dmentry" class="logo-link"><img src="images/gh_logo.png" alt="gh" class="logo"></a>
-          <a href="https://t.me/dack99" class="logo-link"><img src="images/teleg_logo.png" alt="gh" class="logo"></a></p>
-          <div class="top-margin">
-            <p><span class="bold">Цель:</span> работа Ruby on Rails&ndash;разработчиком, развитие в направлении fullstack-разработки</p>
+        <div class="col col-sm-8 col-md-4 col-xl-4 col-info">
+          <div class="row">
+            <img src="images/503d.jpg" alt="photo">
+          </div>
+          <div class="sticky">
+            <div class="row contact-info">
+              <div class="col-12 info-contact-col-2 pt-3 text-about-me-2">
+                <b>Дмитрий Архипов</b>
+              </div>
+            </div>
+            <div class="row contact-info">
+              <div class="col-12 info-contact-col-2 pt-3 text-about-me-2">
+                <b>Backend&ndash;разработчик (Ruby on Rails)</b>
+              </div>
+            </div>
+            <div class="row contact-info top-more-space">
+              <div class="col-12 info-contact-col-2 pt-3 text-about-me">
+                <b>Балашиха, Московская область</b>
+              </div>
+            </div>
+            <div class="row contact-info top-less-space">
+              <div class="col-12 info-contact-col-2 pt-3 text-about-me">
+                <p><b>Контакты:</b>
+                <a href="mailto:job@dack9.ru" class="logo-link"><img src="images/mail_logo.png" alt="email" class="logo"></a>
+                <a href="https://github.com/dmentry" class="logo-link"><img src="images/gh_logo.png" alt="gh" class="logo"></a>
+                <a href="https://t.me/dack99" class="logo-link"><img src="images/teleg_logo.png" alt="gh" class="logo"></a></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div>
-        <h4>Профессиональные навыки</h4>
-        <h5>Ruby</h5>
-        <ul>
-          <li><span class="bold">ООП, классы:</span> понимание принципов ООП, важности code style, принципов инкапсуляции, наследования, полиморфизма, абстракции</li>
-          <li><span class="bold">Установка Ruby:</span> использование rvm или rbenv</li>
-        </ul>
-        <h5>Ruby on Rails</h5>
-        <ul>
-          <li><span class="bold">Основы проектирования приложений:</span> изначально необходимо корректно поставить задачу, продумать сущности, написать сценарии и создать CRUD</li>
-          <li><span class="bold">MVC:</span> основа архитектуры приложений</li>
-          <li><span class="bold">Active Record:</span> создание ассоциаций между моделями, построение запросов к базе данных с помощью интерфейса запросов, создание миграций, используя генератор, написание валидаций и коллбэков</li>
-          <li><span class="bold">Action Mailer:</span> отправка почты с помощью Mailjet. В development&ndash;окружении использование гема Letter Opener</li>
-          <li><span class="bold">Аутентификация пользователя</span> с помощью Devise и его авторизация, используя Pandit. Для доступа с учетными данными соц. сетей использование гема OmniAuth</li>
-          <li><span class="bold">Credentials:</span> хранение паролей, ключей и иной конфиденциальной информации</li>
-          <li><span class="bold">i18n:</span> локализация приложения</li>
-          <li><span class="bold">Carrierwave, Rmagick, Fog::Aws :</span> использование для загрузки, обработки и хранения изображений (и не только) в проекте</li>
-          <li><span class="bold">Webpacker:</span> для интеграции Rails со сборщиком ассетов webpack</li>
-          <li><span class="bold">Pry</span> для дебага</li>
-          <li><span class="bold">recaptcha:</span> защита от спама с помощью технологии Google reCAPTCHA</li>
-        </ul>
-          <h5>Тестирование</h5>
-          <ul>
-            <li><span class="bold">RSpec:</span> по возможности, весь основной код необходимо покрывать тестами. Работал с гемом FactoryBot. Для интеграционных тестов использовал Capybara</li>
-          </ul>
-          <h5>БД</h5>
-          <ul>
-            <li>Есть опыт работы с SQLite и PostgreSQL</li>
-            <li>Работа с основными командами БД: SELECT, UPDATE, INSERT, DELETE, WHERE, GROUP BY, ORDER BY, JOIN</li>
-          </ul>
-          <h5>Deploy</h5>
-          <ul>
-            <li><span class="bold">VPS</span></li>
-              <ul>
-                <li>Установка веб-серверов Nginx и Phusion Passenger c БД PostgreSQL</li>
-                <li>Деплой Rails&ndash;приложения с помощью Capistrano</li>
+        <div class="col-md-8 col-lg-8">
+          <div class="row ml-lg-1 ml-md-1 bg-white">
+            <div class="col-12 pt-2 text-dark">
+              <h3>Профессиональные навыки</h3>
+              <ul class="list-skills">
+                <li class="list-list">
+
+                  <span class="skills-title">Ruby</span><br>
+                  <ul>
+                    <li><strong>ООП, классы:</strong> понимание принципов ООП, важности code style, принципов инкапсуляции, наследования, полиморфизма, абстракции</li>
+                    <li><strong>Установка Ruby:</strong> использование <span class="badge badge-secondary">rvm</span> или <span class="badge badge-secondary">rbenv</span></li>
+                  </ul>
+                  <li class="list-list">
+
+                  <h5 class="skills-title">Ruby on Rails</h5>
+                  <ul>
+                    <li><strong>Основы проектирования приложений:</strong> изначально необходимо корректно поставить задачу, продумать сущности, написать сценарии и создать CRUD</li>
+                    <li><strong>MVC:</strong> основа архитектуры приложений</li>
+                    <li><strong>Active Record:</strong> создание ассоциаций между моделями, построение запросов к базе данных с помощью интерфейса запросов, создание миграций, используя генератор, написание валидаций и коллбэков</li>
+                    <li><strong>Action Mailer:</strong> отправка почты с помощью <span class="badge badge-secondary">Mailjet</span>. В development&ndash;окружении использование гема <span class="badge badge-secondary">Letter Opener</span></li>
+                    <li><strong>Аутентификация пользователя</strong> с помощью <span class="badge badge-secondary">Devise</span> и его авторизация, используя <span class="badge badge-secondary">Pandit</span>. Для доступа с учетными данными соц. сетей использование гема <span class="badge badge-secondary">OmniAuth</span></li>
+                    <li><strong>Credentials:</strong> хранение паролей, ключей и иной конфиденциальной информации</li>
+                    <li><strong>i18n:</strong> локализация приложения</li>
+                    <li><span class="badge badge-secondary">Carrierwave</span>, <span class="badge badge-secondary">Rmagick</span>, <span class="badge badge-secondary">Fog::Aws</span> &ndash; использование для загрузки, обработки и хранения изображений (и не только) в проекте</li>
+                    <li><span class="badge badge-secondary">Webpacker</span>  для интеграции Rails со сборщиком ассетов webpack</li>
+                    <li><span class="badge badge-secondary">Pry</span>  для дебага</li>
+                    <li><span class="badge badge-secondary">Recaptcha</span> &ndash; защита от спама с помощью технологии Google reCAPTCHA</li>
+                  </ul>
+                  <li class="list-list">
+
+                  <h5 class="skills-title">Тестирование</h5>
+                  <ul>
+                    <li><strong>RSpec:</strong> по возможности, весь основной код необходимо покрывать тестами. Работал с гемом <span class="badge badge-secondary">FactoryBot</span>. Для интеграционных тестов использовал <span class="badge badge-secondary">Capybara</span></li>
+                  </ul>
+                  <li class="list-list">
+
+                  <h5 class="skills-title">БД</h5>
+                  <ul>
+                    <li>Есть опыт работы с SQLite и PostgreSQL</li>
+                    <li>Работа с основными командами БД: <code>SELECT, UPDATE, INSERT, DELETE, WHERE, GROUP BY, ORDER BY, JOIN</code></li>
+                  </ul>
+                  <li class="list-list">
+
+                  <h5 class="skills-title">Deploy</h5>
+                  <ul>
+                    <li><strong>VPS</strong></li>
+                    <ul>
+                      <li class="second_list">Установка веб-серверов Nginx и Phusion Passenger c БД PostgreSQL</li>
+                      <li class="second_list">Деплой Rails&ndash;приложения с помощью <span class="badge badge-secondary">Capistrano</span></li>
+                    </ul>
+                    <li ><strong>Heroku</strong></li>
+                    <ul>
+                      <li class="second_list">Развертывание приложения, настройка переменных окружения, работа с логами</li>
+                    </ul>
+                  </ul>
+                  <li class="list-list">
+
+                  <h5 class="skills-title">Технологии</h5>
+                  <ul>
+                    <li><strong>Git, Github:</strong> базовое использование</li>
+                    <li><strong>Linux:</strong> Ubuntu</strong></li>
+                    <li><strong>RubyMine, Sublime:</strong> написание кода</li>
+                    <li><strong>AWS S3:</strong> хранение файлов</li>
+                  </ul>
+                  <li class="list-list">
+
+                  <h5 class="skills-title">XML, JSON</h5>
+                  <ul>
+                    <li>Чтение и запись с помощью библиотек</li>
+                    <li>Парсинг данных с сайтов и их обработка</li>
+                  </ul>
+                  <li class="list-list">
+
+                  <h5 class="skills-title">XLSX, DOC</h5>
+                  <ul>
+                    <li>Парсинг данных из файлов, их обработка и запись с помощью гемов: <span class="badge badge-secondary">Roo</span>, <span class="badge badge-secondary">REXML</span>, <span class="badge badge-secondary">WriteXLSX</span>, <span class="badge badge-secondary">Omnidocx</span>, <span class="badge badge-secondary">Sablon</span></li>
+                  </ul>
+                  <li class="list-list">
+
+                  <h5 class="skills-title">Frontend</h5>
+                  <ul>
+                    <li><strong>HTML, CSS, Bootstrap 4.5:</strong> уверенное использование (<a href="https://myphotolanding.herokuapp.com/" class="text-secondary" title="Фотокурс">пример моего лендинга</a>)</li>
+                    <li><strong>jQuery:</strong> базовое использование</li>
+                  </ul>
+                  <li class="list-list">
+
+                  <h5 class="skills-title">Иностранный язык</h5>
+                  <ul>
+                    <li><span class="bold">Английский:</span> upper intermediate</li>
+                  </ul>
+
+                </li>
               </ul>
-            <li><span class="bold">Heroku</span></li>
-              <ul>
-                <li>Развертывание приложения, настройка переменных окружения, работа с логами</li>
-              </ul>
-          </ul>
-          <h5>Технологии</h5>
-          <ul>
-            <li><span class="bold">Git, Github:</span> базовое использование</li>
-            <li><span class="bold">Linux:</span> Ubuntu</li>
-            <li>RubyMine, Sublime</li>
-            <li><span class="bold">AWS S3:</span> хранения файлов</li>
-          </ul>
-          <h5>XML, JSON</h5>
-          <ul>
-            <li>Чтение и запись с помощью библиотек</li>
-            <li>Парсинг данных с сайтов и их обработка</li>
-          </ul>
-          <h5>XLSX, DOC</h5>
-          <ul>
-            <li>Парсинг данных из файлов, их обработка и запись с помощью гемов: Roo, REXML, WriteXLSX, Omnidocx, Sablon</li>
-          </ul>
-          <h5>Frontend</h5>
-          <ul>
-            <li><span class="bold">HTML, CSS, Bootstrap 4.5:</span> уверенное использование (<a href="https://myphotolanding.herokuapp.com/" title="Фотокурс">пример моего лендинга</a>)</li>
-            <li><span class="bold">jQuery:</span> базовое использование</li>
-          </ul>
-          <h5>Иностранный язык</h5>
-          <ul>
-            <li><span class="bold">Английский:</span> upper intermediate</li>
-          </ul>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Некоторые учебные проекты</h4>
-        <div class="row">
-          <div class="three columns">
-            <div class="centered">
-              <p class="appl-name">Известная телеигра: 'Кто хочет стать миллионером?'</p>
-              <a href="https://luckyperson.herokuapp.com" title="Открыть приложение"><img src="images/screen_khsm.jpg" alt="application screenshot" class="application-ref u-max-full-width scr-img"></a>
-            </div>
-            <div class="centered">
-              <a class="appl-name" href="https://github.com/dmentry/lucky_person" title="GitHub">Описание и код на GitHub</a>
             </div>
           </div>
-          <div class="three columns">
-            <div class="centered">
-              <p class="appl-name">'Шашлыки' &ndash; приложение для организации мероприятий</p>
-              <a href="http://bbq.dack9.ru"><img src="images/screenshot_bbq.jpg" alt="application screenshot" class="application-ref u-max-full-width scr-img"></a>
-            </div>
-            <div class="centered">
-              <a class="appl-name" href="https://github.com/dmentry/bbq" title="GitHub">Описание и код на GitHub</a>
+
+          <div class="row bg-white box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1">
+            <div class="col-12 pt-3 text-secondary int-info">
+              <h3 class="bottom-line">Некоторые учебные проекты</h3>
+              <div class="bottom-line-applications">
+                <h5 class="card-title text-dark">Кто хочет стать миллионером?</h5>
+                <p class="card-text text-secondary">Попробуйте себя в роли участника, ответьте на все вопросы и выиграйте виртуальный миллион!</p>
+                <div><img src="images/screen_khsm.jpg" alt="screenshot" class="appl-screenshot"></div>
+                <a href="https://luckyperson.herokuapp.com" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Открыть приложение</a>
+                <a href="https://github.com/dmentry/lucky_person" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="Подробнее на GitHub">GitHub</a>
+              </div>
+              <br>
+              <div  class="bottom-line-applications">
+                <h5 class="card-title text-dark">Шашлыки</h5>
+                <p class="card-text text-secondary">Приложение для организации мероприятий, подписки на них, комментирования, получений уведомлений и загрузки фотографий.</p>
+                <div><img src="images/screenshot_bbq.jpg" alt="screenshot" class="appl-screenshot"></div>
+                <a href="http://bbq.dack9.ru" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Открыть приложение</a>
+                <a href="https://github.com/dmentry/bbq" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="Подробнее на GitHub">GitHub</a>
+              </div>
+              <br>
+              <div  class="bottom-line-applications">
+                <h5 class="card-title text-dark">Askme</h5>
+                <p class="card-text text-secondary">Аналог ASKfm. На сайте пользователи могут задавать свои вопросы и оставлять ответы на заданные им.</p>
+                <div><img src="images/screenshot_ask.jpg" alt="screenshot" class="appl-screenshot"></div>
+                <a href="https://allask.herokuapp.com" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Открыть приложение</a>
+                <a href="https://github.com/dmentry/askme" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="Подробнее на GitHub">GitHub</a>
+              </div>
+              <br>
+              <div  class="bottom-line-applications">
+                <h5 class="card-title text-dark">Виселица</h5>
+                <p class="card-text text-secondary">Попробуйте отгадать слово! Аскетичная реализация известной игры на Ruby on Rails</p>
+                <div><img src="images/screenshot_hangman.jpg" alt="screenshot" class="appl-screenshot"></div>
+                <a href="https://hangmanrails.herokuapp.com" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Открыть приложение</a>
+                <a href="https://github.com/dmentry/hangman_rails" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="Подробнее на GitHub">GitHub</a>
+              </div>
+              <br>
+              <div  class="bottom-line-applications">
+                <h5 class="card-title text-dark">Что надеть?</h5>
+                <p class="card-text text-secondary">Консольное приложение, которое рекомендует, какие вещи надеть на основе текущего прогноза погоды для вашего местоположения, определяемого по ip.</p>
+                <div><img src="images/screenshot_whattowear.jpg" alt="screenshot" class="appl-screenshot"></div>
+                <a href="https://github.com/dmentry/what_to_wear" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="Подробнее на GitHub">GitHub</a>
+              </div>
+              <br>
             </div>
           </div>
-          <div class="three columns">
-            <div class="centered">
-              <p class="appl-name">Аналог ASKf. Пользователи задают вопросы</p>
-              <a href="https://allask.herokuapp.com"><img src="images/screenshot_ask.jpg" alt="application screenshot" class="application-ref u-max-full-width scr-img"></a>
-            </div>
-            <div class="centered">
-              <a class="appl-name" href="https://github.com/dmentry/askme" title="GitHub">Описание и код на GitHub</a>
-            </div>
-          </div>
-          <div class="three columns">
-            <div class="centered">
-              <p class="appl-name">Минималистичная реализация "Виселицы" на Ruby on Rails</p>
-              <a href="https://hangmanrails.herokuapp.com"><img src="images/screenshot_hangman.jpg" alt="application screenshot" class="application-ref u-max-full-width scr-img"></a>
-            </div>
-            <div class="centered">
-              <a class="appl-name" href="https://github.com/dmentry/hangman_rails" title="GitHub">Описание и код на GitHub</a>
+
+          <div class="row bg-white box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1">
+            <div class="col-12 pt-3 text-secondary int-info">
+              <h3 class="bottom-line">Дополнительное образование</h3>
+              <a class="text-info" href="https:/goodprogrammer.ru" rel="noopener noreferrer" target="_blank">Хороший программист</a>
+              <div class="period">Курс: &laquo;Онлайн&ndash;интенсив по Ruby on Rails&raquo;<br>09.2020 &ndash; 03.2021</div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div>
-        <h4 class="top-margin2">Дополнительное образование</h4>
-        <h5><a href="https://goodprogrammer.ru">Хороший программист</a></h5>
-        <ul>
-          <li>Курс: «Онлайн&ndash;интенсив по Ruby on Rails»</li>
-        </ul>
-        <p class="work_period">2020 &ndash; 2021</p>
-      </div>
+          <div class="row bg-white box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1">
+            <div class="col-12 pt-3 text-secondary int-info">
+              <h3 class="bottom-line">Опыт работы</h3>
+              <div class="bottom-line">
+                <a class="text-info" href="https://www.mazda.ru" rel="noopener noreferrer" target="_blank">ООО &laquo;Мазда Мотор Рус&raquo;</a>
+                <div class="period">Координатор по качеству продукции<br>05.2015 &ndash; по нынешнее время</div>
+                <br>
+                <div class="period">Специалист по гарантии<br>03.2008 &ndash; 05.2015</div>
+              </div>
+              <br>
+              <a class="text-info" href="https://business-car.ru" rel="noopener noreferrer" target="_blank">ООО СП &laquo;Бизнес Кар&raquo;</a>
+              <div class="period">Инженер&ndash;технолог<br>11.2006 &ndash; 03.2008</div>
+              <br>
+              <div class="period">Автоэлектрик&ndash;диагност<br>06.2002 &ndash; 11.2006</div>
+            </div>
+          </div>
 
-      <div>
-        <h4 class="top-margin">Опыт работы</h4>
-          <h5>ООО «Мазда Мотор Рус»</h5>
-          <ul>
-            <li>Координатор по качеству продукции</li>
-          </ul>
-          <p class="work_period">05.2015 &ndash; по нынешнее время</p>
-          <ul>
-            <li>Специалист по гарантии</li>
-          </ul>
-          <p class="work_period">03.2008 &ndash; 05.2015</p>
+          <div class="row bg-white box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1">
+            <div class="col-12 pt-3 text-secondary int-info">
+              <h3 class="bottom-line">Высшее образование</h3>
+              <div class="bottom-line">
+                <a class="text-info" href="https://new.mospolytech.ru" rel="noopener noreferrer" target="_blank">Московский Государственный Технический Университет (МАМИ)</a>
+                <div class="period">Факультет энергомашиностроения и приборостроения (ЭМиП)</div>
+                <div class="period">Инженер по электрооборудованию автомобилей и тракторов<br>1997 &ndash; 2002</div>
+              </div>
+            </div>
+          </div>
 
-          <h5>ООО СП «Бизнес Кар»</h5>
-          <ul>
-            <li>Инженер&ndash;технолог</li>
-          </ul>
-          <p class="work_period">11.2006 &ndash; 03.2008</p>
-          <ul>
-            <li>Автоэлектрик&ndash;диагност</li>
-          </ul>
-          <p class="work_period">06.2002 &ndash; 11.2006</p>
-      </div>
-
-      <div>
-        <h4>Высшее образование</h4>
-        <ul>
-          <li>Московский Государственный Технический Университет (МАМИ), факультет энергомашиностроения и приборостроения (ЭМиП), специальность  «Электрооборудование автомобилей»</li>
-        </ul>
-        <p class="work_period">1997 &ndash; 2002</p>
-      </div>
-
-      <div>
-        <h4>Обо мне</h4>
-        <ul>
-          <li>Возраст: 41 год</li>
-          <li>Место проживания: г. Балашиха, Московская область</li>
-          <li>Являюсь достаточно открытым человеком, который всегда готов пообщаться и выслушать рекомендации более опытных коллег. Целеустремлен, обязателен, пунктуален. Хобби &ndash; макрофотография. Решил кардинально сменить сферу деятельности из-за профессионального выгорания</li>
-        </ul>
-      </div>
-
-      <div>
-          <p class="bottom_contacts centered"><a href="mailto:work@dack9.ru" class="logo-link"><img src="images/mail_logo.png" alt="email" class="logo"></a>
-          <a href="https://github.com/dmentry" class="logo-link"><img src="images/gh_logo.png" alt="gh" class="logo"></a>
-          <a href="https://t.me/dack99" class="logo-link"><img src="images/teleg_logo.png" alt="gh" class="logo"></a></p>
+          <div class="row bg-white box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1">
+            <div class="col-12 pt-3 text-secondary int-info">
+              <h3 class="bottom-line">Личная информация</h3>
+              <div class="bottom-space">
+                <div>Мне 41 год. Являюсь достаточно открытым человеком, который всегда готов пообщаться и выслушать рекомендации более опытных коллег. Целеустремлен, обязателен, пунктуален. Хобби &ndash; макрофотография. Решил кардинально сменить сферу деятельности из-за профессионального выгорания.</div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
-  </body>
+
+  </div>
+</body>
 </html>
