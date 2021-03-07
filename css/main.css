@@ -122,6 +122,10 @@ img {
   margin: 0 0 0 18px;
 }
 
+.logo-link:hover {
+  opacity: 0.5;
+}
+
 .skills-title {
   color: #37474F;
   font-weight: 500;
