@@ -55,10 +55,6 @@ li {
   top: 0;
 }
 
-.second_list {
-  margin: 0 0 0 10px;
-}
-
 .appl-screenshot {
   width: 265px;
   height: auto;
@@ -112,6 +108,10 @@ img {
   padding: 0 0 0 7px;
   margin: 0 0 0 0;
   font-size: 140%;
+}
+
+.list-text-about {
+  font-size: 90%;
 }
 
 .logo {
