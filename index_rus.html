@@ -63,9 +63,11 @@
                     <li><strong>MVC:</strong> основа архитектуры приложений</li>
                     <li><strong>Active Record:</strong> создание ассоциаций между моделями, построение запросов к базе данных с помощью интерфейса запросов, создание миграций, используя генератор, написание валидаций и коллбэков</li>
                     <li><strong>Action Mailer:</strong> отправка почты с помощью <span class="badge badge-secondary">Mailjet</span>. В development&ndash;окружении использование гема <span class="badge badge-secondary">Letter Opener</span></li>
-                    <li><strong>Аутентификация пользователя</strong> с помощью <span class="badge badge-secondary">Devise</span> и его авторизация, используя <span class="badge badge-secondary">Pundit</span>. Для доступа с учетными данными соц. сетей использование гема <span class="badge badge-secondary">OmniAuth</span></li>
+                    <li><strong>Аутентификация пользователя</strong> с помощью <span class="badge badge-secondary">Devise</span> и его авторизация, используя <span class="badge badge-secondary">Pundit</span> или <span class="badge badge-secondary">Cancancan</span>. Для доступа с учетными данными соц. сетей использование <span class="badge badge-secondary">OmniAuth</span></li>
                     <li><strong>Credentials:</strong> хранение паролей, ключей и иной конфиденциальной информации</li>
-                    <li><strong>i18n:</strong> локализация приложения</li>
+                    <li><strong>Rake:</strong> создание задач и использование <span class="badge badge-secondary">cron</span></li>
+                    <li><span class="badge badge-secondary">State Machines</span> - конечный автомат для моделей</li>
+                    <li><span class="badge badge-secondary">Ransack</span> - поиск</li>
                     <li><span class="badge badge-secondary">Carrierwave</span>, <span class="badge badge-secondary">Rmagick</span>, <span class="badge badge-secondary">Fog::Aws</span> &ndash; использование для загрузки, обработки и хранения изображений (и не только) в проекте</li>
                     <li><span class="badge badge-secondary">Webpacker</span>  для интеграции Rails со сборщиком ассетов webpack</li>
                     <li><span class="badge badge-secondary">Pry</span>  для дебага (и в Ruby тоже)</li>
@@ -81,15 +83,14 @@
 
                   <h5 class="skills-title">Базы данных</h5>
                   <ul>
-                    <li>Есть опыт работы с SQLite и PostgreSQL</li>
-                    <li>Работа с основными командами БД: <code>SELECT, UPDATE, INSERT, DELETE, WHERE, GROUP BY, ORDER BY, JOIN</code></li>
+                    <li>Опыт работы с <strong>SQLite</strong>, <strong>MySQL</strong>, <strong>PostgreSQL</strong></li>
                   </ul>
                   <li class="list-list">
 
                   <h5 class="skills-title">Deploy</h5>
                   <ul>
                     <li><strong>VPS: </strong>установка веб-серверов <span class="badge badge-secondary">Nginx</span> и <span class="badge badge-secondary">Phusion Passenger</span> c <span class="badge badge-secondary">PostgreSQL</span>. Деплой Rails&ndash;приложения с помощью <span class="badge badge-secondary">Capistrano</span></li>
-                    <li ><strong>Heroku: </strong>развертывание приложения, настройка переменных окружения, работа с логами</li>
+                    <li ><strong>Heroku: </strong>развертывание приложения</li>
                   </ul>
                   <li class="list-list">
 
@@ -104,8 +105,7 @@
 
                   <h5 class="skills-title">Frontend</h5>
                   <ul>
-                    <li><strong>HTML, CSS, Bootstrap 4.5:</strong> уверенное использование</li>
-                    <li><strong>jQuery:</strong> базовое использование</li>
+                    <li><strong>HTML, CSS, Bootstrap4, JS, jQuery, ExtJS, Slim</strong></li>
                   </ul>
                   <li class="list-list">
 
@@ -115,15 +115,6 @@
                   </ul>
                 </li>
               </ul>
-            </div>
-          </div>
-
-          <div class="row box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1 bg-white rounded-sm">
-            <div class="col-12 pt-3 text-secondary int-info">
-              <h3 class="bottom-line">Дополнительное образование</h3>
-              <a class="text-info" href="https:/goodprogrammer.ru" rel="noopener noreferrer" target="_blank">Хороший программист</a>
-              <div>Курс: &laquo;Онлайн&ndash;интенсив по Ruby on Rails&raquo;<br>09.2020 &ndash; 03.2021</div>
-              <br>
             </div>
           </div>
 
@@ -192,7 +183,6 @@
                 <h5 class="card-title text-dark">Askme</h5>
                 <p class="card-text text-secondary">Аналог ASKfm. На сайте пользователи могут задавать свои вопросы и оставлять ответы на заданные им.</p>
                 <div><img src="images/screenshot_ask.jpg" alt="screenshot" class="appl-screenshot"></div>
-                <a href="https://allask.herokuapp.com" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Открыть приложение</a>
                 <a href="https://github.com/dmentry/askme" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="Подробнее на GitHub">GitHub</a>
               </div>
               <br>
@@ -200,7 +190,6 @@
                 <h5 class="card-title text-dark">Виселица</h5>
                 <p class="card-text text-secondary">Попробуйте отгадать слово! Аскетичная реализация известной игры на Ruby on Rails</p>
                 <div><img src="images/screenshot_hangman.jpg" alt="screenshot" class="appl-screenshot"></div>
-                <a href="https://hangmanrails.herokuapp.com" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Открыть приложение</a>
                 <a href="https://github.com/dmentry/hangman_rails" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="Подробнее на GitHub">GitHub</a>
               </div>
               <br>
@@ -208,7 +197,6 @@
                 <h5 class="card-title text-dark">Телеграм-бот (прогноз погоды)</h5>
                 <p class="card-text text-secondary">Телеграм-бот показывает прогноз погоды на текущий и следующий день в любом населенном пункте.</p>
                 <div><img src="images/screenshot_forecast_bot.jpg" alt="screenshot" class="appl-screenshot"></div>
-                <a href="https://t.me/city_weath_bot" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Открыть приложение</a>
                 <a href="https://github.com/dmentry/weather_forecast_bot" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="Подробнее на GitHub">GitHub</a>
               </div>
               <br>
@@ -216,9 +204,20 @@
                 <h5 class="card-title text-dark">Пример лендинга</h5>
                 <p class="card-text text-secondary">Лендинга фотокурсов с возможностью разместить заказ</p>
                 <div><img src="images/screenshot_landing.jpg" alt="screenshot" class="appl-screenshot"></div>
-                <a href="https://myphotolanding.herokuapp.com" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Открыть приложение</a>
                 <a href="https://github.com/dmentry/landing" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="Подробнее на GitHub">GitHub</a>
               </div>
+              <br>
+            </div>
+          </div>
+
+          <div class="row box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1 bg-white rounded-sm">
+            <div class="col-12 pt-3 text-secondary int-info">
+              <h3 class="bottom-line">Дополнительное образование</h3>
+              <a class="text-info" href="https://stepik.org/course/63054/syllabus" rel="noopener noreferrer" target="_blank">Дальневосточный федеральный университет</a>
+              <div>Курс: &laquo;Интерактивный тренажер по SQL&raquo;<br>09.2022 &ndash; 11.2022</div>
+              <br>
+              <a class="text-info" href="https:/goodprogrammer.ru" rel="noopener noreferrer" target="_blank">Хороший программист</a>
+              <div>Курс: &laquo;Онлайн&ndash;интенсив по Ruby on Rails&raquo;<br>09.2020 &ndash; 03.2021</div>
               <br>
             </div>
           </div>
