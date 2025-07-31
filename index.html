@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dmitry Arkhipov, Ruby on Rails</title>
+  <title>Dmitry Arkhipov, Full-stack developer</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -11,15 +11,13 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="bg-whitesmoke">
-  <div class="container shadow p-2 mb-3 bg-muted rounded bg-gray">
+  <div class="container shadow p-2 mb-3 bg-muted rounded bg-light">
 
     <div class="col offset-xl-1 col-xl-10">
       <div class="row">
-        <div class="col col-sm-8 col-md-4 col-xl-4 col-info">
-          <div class="row">
-            <img class="rounded-sm" src="images/503d.jpg" alt="photo">
-          </div>
-          <div class="sticky">
+        <div class="col col-sm-8 col-md-4 col-xl-4 col-info bg-light">
+          <img src="images/503d.jpg" alt="photo" style="border-radius:20%; width:100%;">
+          <div class="sticky ml-1">
             <div class="row contact-info">
               <div class="col-12 info-contact-col-2 pt-3 text-about-me-2">
                 <b>Dmitry Arkhipov</b>
@@ -27,22 +25,24 @@
             </div>
             <div class="row contact-info">
               <div class="col-12 info-contact-col-2 pt-3 text-about-me-developer">
-                <b>Ruby on Rails developer</b><br>
+                <b>Full-stack developer</b><br>
               </div>
             </div>
             <div class="row contact-info top-more-space">
               <div class="col-12 info-contact-col-2 pt-3 text-about-me">
-                <p><b>Contacts:</b>
-                <a href="mailto:slipin2020@mail.ru" class="logo-link" rel="noopener noreferrer" target="_blank"><img src="images/mail_logo.png" alt="email" class="logo"></a>
-                <a href="https://github.com/dmentry" class="logo-link" rel="noopener noreferrer" target="_blank"><img src="images/gh_logo.png" alt="gh" class="logo"></a>
-                <a href="https://t.me/Dack99" class="logo-link" rel="noopener noreferrer" target="_blank"><img src="images/teleg_logo.png" alt="gh" class="logo"></a></p>
+                <p>
+                  <b>Contacts:</b>
+                  <a href="mailto:mail@dack9.ru" class="logo-link" rel="noopener noreferrer" target="_blank"><img src="images/mail_logo.png" alt="email" class="logo"></a>
+                  <a href="https://github.com/dmentry" class="logo-link" rel="noopener noreferrer" target="_blank"><img src="images/gh_logo.png" alt="gh" class="logo"></a>
+                  <a href="https://t.me/Dack99" class="logo-link" rel="noopener noreferrer" target="_blank"><img src="images/teleg_logo.png" alt="gh" class="logo"></a>
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-8 col-lg-8">
-          <div class="row ml-lg-1 ml-md-1 bg-white rounded-sm">
+          <div class="row ml-lg-1 ml-md-1 bg-white rounded">
             <div class="col-12 pt-3 text-secondary int-info">
               <h3 class="bottom-line">Skills</h3>
               <ul class="list-skills">
@@ -50,53 +50,57 @@
 
                   <h5 class="skills-title">Ruby</h5>
                   <ul>
-                    <li><strong>OOP, classes:</strong> OOP principles understanding, code style importance, incapsulation princeples, inheritance, polymorphism, abstractions</li>
-                    <li><strong>Ruby installation:</strong> <span class="badge badge-secondary">rvm</span> or <span class="badge badge-secondary">rbenv</span> usage</li>
-                    <li><strong>Formats usage:</strong> XML, JSON, XLS, XLSX, DOC</li>
+                    <div class='ml-3'>
+                      <li><strong>OOP, classes:</strong> OOP principles understanding, code style importance, incapsulation princeples, inheritance, polymorphism, abstractions</li>
+                      <li><strong>Ruby installation:</strong> <span class="badge badge-secondary">rvm</span> or <span class="badge badge-secondary">rbenv</span> usage</li>
+                      <li><strong>Formats usage:</strong> XML, JSON, XLS, XLSX, DOC</li>
+                    </div>
                   </ul>
                   <li class="list-list">
 
                   <h5 class="skills-title">Ruby on Rails</h5>
                   <ul>
-                    <li><strong>Application initial architecture:</strong> set the task correctly, create entities, write scripts and create CRUD</li>
-                    <li><strong>MVC:</strong> application architecture basement</li>
-                    <li><strong>Active Record:</strong> associations between models creation, perform database operations in an object-oriented fashion, migrations creating, validations writing</li>
-                    <li><strong>Action Mailer:</strong> emails sending with <span class="badge badge-secondary">Mailjet</span>. <span class="badge badge-secondary">Letter Opener</span> usage in development environment</li>
-                    <li><strong>User authentication</strong> with <span class="badge badge-secondary">Devise</span> and his authorization with <span class="badge badge-secondary">Pundit</span> or <span class="badge badge-secondary">Cancancan</span>. <span class="badge badge-secondary">OmniAuth</span> for login with social networks credentials</li>
-                    <li><strong>Credentials:</strong> passwords, keys and the other confidential info keeping</li>
-                    <li><strong>Rake</strong> tasks with <span class="badge badge-secondary">cron</span></li>
-                    <li><span class="badge badge-secondary">State Machines</span> for models attributes</li>
-                    <li><span class="badge badge-secondary">Ransack</span> for simple and advanced search forms</li>
-                    <li><span class="badge badge-secondary">Carrierwave</span>, <span class="badge badge-secondary">Rmagick</span>, <span class="badge badge-secondary">Fog::Aws</span> for images load, processing and keeping in a project</li>
-                    <li><span class="badge badge-secondary">Recaptcha</span> &ndash; antispam technology with Google reCAPTCHA</li>
+                    <div class='ml-3'>
+                      <li><strong>Application initial architecture:</strong> set the task correctly, create entities, write scripts and create CRUD</li>
+                      <li><strong>MVC:</strong> application architecture basement</li>
+                      <li><strong>Active Record:</strong> associations between models creation, perform database operations in an object-oriented fashion, migrations creating, validations writing</li>
+                      <li><strong>Main gems:</strong> <span class="badge badge-secondary">Devise</span>, <span class="badge badge-secondary">Cancancan</span>, <span class="badge badge-secondary">Pandit</span>, <span class="badge badge-secondary">OmniAuth</span>, <span class="badge badge-secondary">Ransack</span>, <span class="badge badge-secondary">CarrierWave</span>, <span class="badge badge-secondary">Rmagick</span>, <span class="badge badge-secondary">fog-aws</span>, <span class="badge badge-secondary">StateMachines</span>, <span class="badge badge-secondary">Recaptcha</span>, <span class="badge badge-secondary">write_xlsx</span></li>
+                      <li><strong>Rake</strong> tasks with <span class="badge badge-secondary">cron</span></li>
+                    </div>
                   </ul>
                   <li class="list-list">
 
                   <h5 class="skills-title">Testing</h5>
                   <ul>
-                    <li><strong>RSpec:</strong> TDD, BDD, create tests for the whole main code if possible. Unit testing, Integration testing. Used <span class="badge badge-secondary">FactoryBot</span> gem. <span class="badge badge-secondary">Capybara</span> for integration tests.</li>
+                    <div class='ml-3'>
+                      <li><strong>RSpec:</strong> TDD, BDD, create tests for the whole main code if possible. Unit testing, Integration testing. Used <span class="badge badge-secondary">FactoryBot</span> gem. <span class="badge badge-secondary">Capybara</span> for integration tests.</li>
+                    </div>
                   </ul>
                   <li class="list-list">
 
                   <h5 class="skills-title">DB</h5>
                   <ul>
-                    <li><strong>SQLite</strong>, <strong>MySQL</strong>, <strong>PostgreSQL</strong> usage. Queries with <strong>SQL</strong> and Active Record query interface.</li>
+                    <div class='ml-3'>
+                      <li><strong>SQLite</strong>, <strong>MySQL</strong>, <strong>PostgreSQL</strong>, <strong>Redis</strong> usage. Queries with <strong>SQL</strong>, <strong>PL/pgSQL</strong>, <strong>Active Record query interface</strong>.</li>
+                    </div>
                   </ul>
                   <li class="list-list">
 
                   <h5 class="skills-title">Deploy</h5>
                   <ul>
-                    <li><strong>VPS: </strong><span class="badge badge-secondary">Nginx</span> and <span class="badge badge-secondary">Phusion Passenger</span> with <span class="badge badge-secondary">PostgreSQL</span> setup. Rails application deploy with <span class="badge badge-secondary">Capistrano</span></li>
-                    <li ><strong>Heroku: </strong>application deploy</li>
+                    <div class='ml-3'>
+                      <li><strong>Nginx</strong> + <strong>Phusion Passenger</strong> and <strong>PostgreSQL</strong> setup. Initial setup (<strong>ufw</strong>/<strong>iptables</strong> + <strong>fail2ban</strong>). Rails application deploy with <span class="badge badge-secondary">Capistrano</span>.</li>
+                      <li><strong>Heroku: </strong>application deploy.</li>
+                    </div>
                   </ul>
                   <li class="list-list">
 
                   <h5 class="skills-title">Technologies</h5>
                   <ul>
                     <li><strong>Git, Github</strong></li>
-                    <li><strong>Linux:</strong> Ubuntu (Linux Mint)</strong></li>
+                    <li><strong>Ubuntu (Linux Mint)</strong>, <strong>Linux Astra</strong></li>
                     <li><strong>RubyMine, SublimeText</strong></li>
-                    <li><strong>Docker</strong> (run/stop containers)</li>
+                    <li><strong>Docker</strong> (run/stop containers, Dockerfile and docker-compose.yml minimal editing)</li>
                     <li><strong>AWS S3</strong> (beginner level)</li>
                     <li><strong>Telegram</strong> bots creation</li>
                   </ul>
@@ -104,7 +108,7 @@
 
                   <h5 class="skills-title">Frontend</h5>
                   <ul>
-                    <li><strong>HTML, CSS, Bootstrap4, Slim, JS, jQuery, ExtJS</strong></li>
+                    <li><strong>HTML, CSS, Bootstrap4/5, Slim, JS, jQuery, ExtJS</strong></li>
                   </ul>
                   <li class="list-list">
 
@@ -116,38 +120,52 @@
             </div>
           </div>
 
-          <div class="row box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1 bg-white rounded-sm">
+          <div class="row box-shadow mt-2 ml-lg-1 ml-xl-1 bg-white rounded-sm">
             <div class="col-12 pt-3 text-secondary int-info">
               <h3 class="bottom-line">Work experience</h3>
               <a class="text-info" href="https://mednet.ru" rel="noopener noreferrer" target="_blank">Russian Research Institute of Health (Ministry of Health)</a>
               <div>Software engineer</div>
               <ul>
-              <li class="list-text-about"> - Web applications development (frontend, backend)</li>
-              <li class="list-text-about"> - Add new features, change existing code, bugs fix</li>
-              <div>07.2021 &ndash; Present</div>
+                <div class='ml-3'>
+                  <li class="list-text-about"> - New web applications development (frontend, backend)</li>
+                  <li class="list-text-about"> - Add new features, change existing code, bugs fix in existing applications</li>
+                  <div>07.2021 &ndash; Present</div>
+                </div>
               </ul>
               <a class="text-info" href="https://www.mazda.ru" rel="noopener noreferrer" target="_blank">LLC &laquo;Mazda Motor Rus&raquo;</a>
               <div>Quality assurance coordinator</div>
               <ul>
-              <li class="list-text-about"> - Ruby scripts</li>
-              <li class="list-text-about"> - Ruby and Ruby on Rails simple applications creation for internal needs (xls, docx: parsing, changing, reports creation)</li>
-              <li class="list-text-about"> - DB Oracle queries</li>
-              <div>05.2015 &ndash; 07.2021</div>
+                <div class='ml-3'>
+                  <li class="list-text-about"> - Ruby scripts</li>
+                  <li class="list-text-about"> - Ruby and Ruby on Rails applications creation for internal needs (xls, docx: parsing, changing, reports creation)</li>
+                  <div>05.2015 &ndash; 07.2021</div>
+                </div>
               </ul>
               <div>Warranty specialist</div>
               <ul>
-                <li class="list-text-about"> - 1C:Accounting reports creation</li>
-                <li class="list-text-about"> - MS Access DB creation, Excel macroses</li>
-                <div>03.2008 &ndash; 05.2015</div>
+                <div class='ml-3'>
+                  <li class="list-text-about"> - Ruby scripts</li>
+                  <li class="list-text-about"> - MS Access DB creation, Excel macroses</li>
+                  <div>03.2008 &ndash; 05.2015</div>
+                </div>
               </ul>
               <a class="text-info" href="https://business-car.ru" rel="noopener noreferrer" target="_blank">LLC JV &laquo;Business Car&raquo;</a>
               <div>Warranty Engineer</div>
               <ul>
-                <li class="list-text-about"> - MS Access and Excel for reporting</li>
-                <div>11.2006 &ndash; 03.2008</div>
+                <div class='ml-3'>
+                  <li class="list-text-about"> - MS Access and Excel for reporting</li>
+                  <li class="list-text-about"> - Reports and macroses creation</li>
+                  <div>11.2006 &ndash; 03.2008</div>
+                </div>
               </ul>
-              <div>Diagnostician<br>06.2002 &ndash; 11.2006</div>
-              <br>
+              <div>Diagnostician</div>
+              <ul>
+                <div class='ml-3'>
+                  <li class="list-text-about"> - Installation of a wide range of electronic devices</li>
+                  <li class="list-text-about">- Diagnosis (using original diagnostic equipment Intelligent Tester I and II), repair of electrical systems</li>
+                  <div>06.2002 &ndash; 11.2006</div>
+                </div>
+              </ul>
               <a class="text-info" href="https://ru.wikipedia.org/wiki/%D0%98%D0%B4%D1%83%D1%89%D0%B8%D0%B5_%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B5" rel="noopener noreferrer" target="_blank">РОО СВМ &laquo;Идущие вместе&raquo;</a>
               <ul>
                 <li class="list-text-about"> - IT helpdesk</li>
@@ -157,7 +175,14 @@
             </div>
           </div>
 
-          <div class="row box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1 bg-white rounded-sm">
+          <div class="row box-shadow mt-2 ml-lg-1 ml-xl-1 bg-white rounded">
+            <div class="col-12 pt-3 text-secondary int-info">
+              <h3 class="bottom-line">Portfolio</h3>
+              <a href="https://dack9.ru/en/portfolio" class="btn btn-secondary my-2" rel="noopener noreferrer" target="_blank">Follow</a>
+            </div>
+          </div>
+
+          <div class="row box-shadow mt-2 ml-lg-1 ml-xl-1 bg-white rounded">
             <div class="col-12 pt-3 text-secondary int-info">
               <h3 class="bottom-line">Some pet projects</h3>
               <div class="bottom-line-applications">
@@ -173,7 +198,6 @@
                 <p class="card-text text-secondary">Web application Bbq for organization of meetings with friends in different places</p>
                 <div><img src="images/screenshot_bbq.jpg" alt="screenshot" class="appl-screenshot"></div>
                 <a href="https://github.com/dmentry/bbq" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="GitHub repository">GitHub</a>
-                <!-- <a href="http://bbq.dack9.ru" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Open</a> -->
               </div>
               <br>
               <div  class="bottom-line-applications">
@@ -183,35 +207,18 @@
                 <a href="https://github.com/dmentry/askme" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="GitHub repository">GitHub</a>
               </div>
               <br>
-              <div  class="bottom-line-applications">
-                <h5 class="card-title text-dark">Hangman</h5>
-                <p class="card-text text-secondary">Hangman game for Rails</p>
-                <div><img src="images/screenshot_hangman.jpg" alt="screenshot" class="appl-screenshot"></div>
-                <a href="https://github.com/dmentry/hangman_rails" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="GitHub repository">GitHub</a>
-              </div>
-              <br>
-              <div  class="bottom-line-applications">
-                <h5 class="card-title text-dark">Weather forecast Telegram bot</h5>
-                <p class="card-text text-secondary">It shows weather forecast for present and next 7 days in chosen place (could be entered manually or choose from the list).</p>
-                <div><img src="images/screenshot_forecast_bot.jpg" alt="screenshot" class="appl-screenshot"></div>
-                <a href="https://github.com/dmentry/weather_forecast_bot" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="GitHub repository">GitHub</a>
-                <a href="https://t.me/city_weath_bot" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank">Open</a>
-              </div>
-              <br>
-              <div  class="bottom-line-applications">
-                <h5 class="card-title text-dark">Landing example</h5>
-                <p class="card-text text-secondary">Photo course landing with possibility to make order</p>
-                <div><img src="images/screenshot_landing.jpg" alt="screenshot" class="appl-screenshot"></div>
-                <a href="https://github.com/dmentry/landing" class="btn btn-secondary mt-2" rel="noopener noreferrer" target="_blank" title="GitHub repository">GitHub</a>
-              </div>
-              <br>
+              <h5 class="card-title text-dark">Weather forecast Telegram bot</h5>
+              <p class="card-text text-secondary">It shows weather forecast for present and next 7 days in chosen place (could be entered manually or choose from the list). Only in Russian language at the moment</p>
+              <div><img src="https://dack9.ru/packs/media/images/cv/screenshot_forecast_bot-7bbb2c62410c90692d0afaa9ebd40be1.png" alt="screenshot" class="appl-screenshot"></div>
+              <a href="https://github.com/dmentry/weather_forecast_bot" class="btn btn-secondary my-2" rel="noopener noreferrer" target="_blank" title="GitHub repository">GitHub</a>
+              <a href="https://t.me/city_weath_bot" class="btn btn-secondary my-2" rel="noopener noreferrer" target="_blank">Open</a>
             </div>
           </div>
 
-          <div class="row box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1 bg-white rounded-sm">
+          <div class="row box-shadow mt-2 ml-lg-1 ml-xl-1 bg-white rounded-sm">
             <div class="col-12 pt-3 text-secondary int-info">
               <h3 class="bottom-line">Courses</h3>
-              <a class="text-info" href="https://stepik.org/course/63054/syllabus" rel="noopener noreferrer" target="_blank">Дальневосточный федеральный университет</a>
+              <a class="text-info" href="https://stepik.org/course/63054/syllabus" rel="noopener noreferrer" target="_blank">Far Eastern Federal University</a>
               <div>Course: &laquo;SQL interactive course&raquo;<br>09.2022 &ndash; 11.2022</div>
               <br>
               <a class="text-info" href="https://goodprogrammer.ru" rel="noopener noreferrer" target="_blank">Good programmer</a>
@@ -220,7 +227,7 @@
             </div>
           </div>
 
-          <div class="row box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1 bg-white rounded-sm">
+          <div class="row box-shadow mt-2 ml-lg-1 ml-xl-1 bg-white rounded-sm">
             <div class="col-12 pt-3 text-secondary int-info">
               <h3 class="bottom-line">Higher education</h3>
               <a class="text-info" href="https://new.mospolytech.ru" rel="noopener noreferrer" target="_blank">Moscow State Technical University (MAMI)</a>
@@ -229,7 +236,7 @@
             </div>
           </div>
 
-          <div class="row box-shadow mt-4 mb-4 ml-lg-1 ml-xl-1 bg-white rounded-sm">
+          <div class="row box-shadow my-2 ml-lg-1 ml-xl-1 bg-white rounded-sm">
             <div class="col-12 pt-3 text-secondary int-info">
               <h3 class="bottom-line">About</h3>
               <div>Open mind person who is always ready for negotiating and to hear for advises from more experiensed colleagues. Goal-oriented, dutiful, accurate.
